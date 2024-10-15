@@ -1,0 +1,32 @@
+.vertical-flip {
+	width: 10rem;
+	height: 1rem;
+	margin-block-start: 0.5rem;
+	background: dodgerblue;
+}
+
+main {
+	/* border: 1px dotted white; */
+	/* text-align: center; */
+}
+.wrap {
+	outline: 1px solid #efefef;
+	outline-offset: 0.25rem;
+}
+p {
+	opacity: 0.5;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	background: #080808;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}

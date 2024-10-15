@@ -1,0 +1,183 @@
+body {
+  position: relative;
+  width: 100vw;
+  background: #B0BEC5;
+  text-align: center;
+}
+.wrap {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 50%;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 252px;
+  height: 388px;
+  margin: auto;
+  overflow: visible;
+}
+.wrap_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.5s;
+}
+.wrap_inner:nth-child(2) {
+  background: radial-gradient(circle at 50% 50%, #C5CAE9, #b0bec5 70%);
+}
+.wrap_inner:nth-child(3) {
+  background: radial-gradient(circle at 50% 50%, #B2EBF2, #b0bec5 70%);
+}
+.wrap_inner:nth-child(4) {
+  background: radial-gradient(circle at 50% 50%, #F0F4C3, #b0bec5 70%);
+}
+.wrap_inner:nth-child(5) {
+  background: radial-gradient(circle at 50% 50%, #D7CCC8, #b0bec5 70%);
+}
+body .wrap_inner:nth-child(2),
+.effect3 .wrap_inner:nth-child(2),
+.effect5 .wrap_inner:nth-child(2),
+.effect7 .wrap_inner:nth-child(2) {
+  -webkit-clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 0% 50%);
+  clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 0% 50%);
+}
+body .wrap_inner:nth-child(3),
+.effect3 .wrap_inner:nth-child(3),
+.effect5 .wrap_inner:nth-child(3),
+.effect7 .wrap_inner:nth-child(3) {
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+}
+body .wrap_inner:nth-child(4),
+.effect3 .wrap_inner:nth-child(4),
+.effect5 .wrap_inner:nth-child(4),
+.effect7 .wrap_inner:nth-child(4) {
+  -webkit-clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+}
+body .wrap_inner:nth-child(5),
+.effect3 .wrap_inner:nth-child(5),
+.effect5 .wrap_inner:nth-child(5),
+.effect7 .wrap_inner:nth-child(5) {
+  -webkit-clip-path: polygon(0% 50%, 50% 50%, 50% 100%, 0% 100%);
+  clip-path: polygon(0% 50%, 50% 50%, 50% 100%, 0% 100%);
+}
+.effect2 .wrap_inner:nth-child(2) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.effect2 .wrap_inner:nth-child(3) {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+.effect2 .wrap_inner:nth-child(4) {
+  -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+}
+.effect2 .wrap_inner:nth-child(5) {
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+.effect4 .wrap_inner:nth-child(2) {
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.effect4 .wrap_inner:nth-child(3) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.effect4 .wrap_inner:nth-child(4) {
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+.effect4 .wrap_inner:nth-child(5) {
+  -webkit-clip-path: polygon(0% 100%, 0% 100%, 0% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 0% 100%, 0% 100%, 0% 100%);
+}
+.effect6 .wrap_inner:nth-child(2) {
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+  clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+}
+.effect6 .wrap_inner:nth-child(3) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+.effect6 .wrap_inner:nth-child(4) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.effect6 .wrap_inner:nth-child(5) {
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.effect8 .wrap_inner:nth-child(2) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+.effect8 .wrap_inner:nth-child(3) {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%);
+}
+.effect8 .wrap_inner:nth-child(4) {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+.effect8 .wrap_inner:nth-child(5) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.bucket {
+  transform-origin: 40px 207px;
+  animation: ani_bucket 1.7s linear infinite;
+}
+@keyframes ani_bucket {
+  0% {
+    transform: rotate(0deg);
+  }
+  8% {
+    transform: rotate(35deg);
+  }
+  24% {
+    transform: rotate(-35deg);
+  }
+  40% {
+    transform: rotate(35deg);
+  }
+  58% {
+    transform: rotate(-15deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+}
+.switch {
+  position: relative;
+  z-index: 2;
+  height: 35px;
+  margin-top: 25px;
+  padding: 0 15px;
+  background: #B72327;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.switch:hover {
+  background: #8c1b1e;
+}

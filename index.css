@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: #011627;
+	color: #fff;
+	padding-top: 50px;
+}
+
+.select {
+	position: relative;
+	margin: 0 10px;
+	/* 内容不换行 */
+	white-space: nowrap;
+}
+
+.title {
+	min-width: 150px;
+	height: 40px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #999;
+	border: 1px solid #5f7e97;
+	cursor: pointer;
+}
+
+.title > .iconfont {
+	font-size: 10px;
+	transition: 0.3s linear;
+}
+
+.options {
+	position: absolute;
+	top: 52px;
+	padding: 10px;
+	min-width: 100%;
+	font-size: 12px;
+	border: 1px solid #5f7e97;
+	background-color: #011627;
+	border-radius: 5px;
+	max-height: 300px;
+	opacity: 0;
+	transform: scaleY(0);
+	transition: all 0.3s ease-in-out;
+	/* 设置变形原点 */
+	transform-origin: center -10px;
+	display: grid;
+	/* 纵向排列 */
+	grid-auto-flow: column;
+	/* 根据内容自动生成行，设置行高 */
+	grid-template-rows: repeat(auto-fit, 20px);
+	/* 设置行间隙 */
+	row-gap: 6px;
+	/* 设置列间隙 */
+	column-gap: 25px;
+	/* 单元格内容靠左，根据内容自适应宽度 */
+	justify-items: left;
+	filter: drop-shadow(0 0 2px #c5e4fd);
+}
+
+.options::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 65px;
+	top: -6px;
+	border: 1px solid #5f7e97;
+	transform: rotate(45deg);
+	border-right: none;
+	border-bottom: none;
+	background-color: #011627;
+}
+
+.options li {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 3px 5px;
+	border-radius: 5px;
+	color: #c5e4fd;
+}
+
+.options li.active {
+	background-color: #c5e478;
+	color: #011627;
+}
+
+.select.expand .options {
+	z-index: 999;
+	transform: scaleY(1);
+	opacity: 1;
+}
+
+.select.expand .iconfont {
+	transform: rotate(180deg);
+}
+
+.select.disabled .title {
+	color: #333;
+	cursor: not-allowed;
+}
